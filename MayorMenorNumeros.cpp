@@ -1,7 +1,9 @@
 #include <iostream>
+#include <windows.h>
 using namespace std;
 
 int main() {
+	SetConsoleOutputCP(CP_UTF8);
     int n;
     cout << "Ingrese la cantidad de números: ";
     cin >> n;
