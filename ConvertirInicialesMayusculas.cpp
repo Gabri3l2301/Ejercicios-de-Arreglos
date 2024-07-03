@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <windows.h>
 using namespace std;
 
 bool esEspacio(char c) {
@@ -36,6 +37,7 @@ void convertirMayusculasIniciales(string &frase) {
 }
 
 int main() {
+	SetConsoleOutputCP(CP_UTF8);
     string frase = "cáceres patrimonio de la humanidad";
     convertirMayusculasIniciales(frase);
     cout << "Frase convertida: " << frase << endl;
